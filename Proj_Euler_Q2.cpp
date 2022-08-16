@@ -11,7 +11,7 @@ int sum_even_fib(){
     int next_term = term1 + term2; // compute 3rd term before entering loop that computes the rest of the sequence
     sum = 2;
     while(true){
-        if(next_term >= 4E6){
+        if(next_term > 4E6){
             return sum; // leave loop and return sum if the new term is greater than 4 million
         }
         if(next_term % 2 == 0){
